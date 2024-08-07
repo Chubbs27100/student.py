@@ -1,0 +1,40 @@
+class student:
+  name = input("Enter your name: ")
+  age = 16
+  schoolclass = "11th A"
+  classteacher = "ishaan"
+#constructer is used to initialise a class variable
+  def __init__(self):
+    print("making a new student")
+
+  #declaring a function to show details
+  def show_details(self):
+    print("the details of the student are: ")
+    print("name: ",self.name)
+    print("age: ",self.age)
+    print("schoolclass: ",self.schoolclass)
+    print("classteacher: ",self.classteacher)
+
+  # declaring a function to change the details
+  def change_details(self):
+    print("please enter your age")
+    self.age = int(input())
+    print("enter name of student")
+    self.name = input()
+    
+print("\n age of student:",student.age)#accesing the age of the student
+student1 = student()#creating the object of the class student
+print()
+student1.show_details() #calling the show_details function
+print()
+student1.change_details()
+print()
+student1.show_details()
+
+
+#creating another object
+student2 = student()
+print()
+student2.change_details()
+print()
+student2.show_details()
